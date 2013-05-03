@@ -1,0 +1,12 @@
+diff -uNr dvbstream.old/dvbstream.c dvbstream/dvbstream.c
+--- dvbstream.old/dvbstream.c	2012-12-28 00:27:02.000000000 +0100
++++ dvbstream/dvbstream.c	2013-05-03 18:59:50.265518063 +0200
+@@ -1685,7 +1685,7 @@
+ 							struct MESSAGE *pMessageLoop = pLocalMessages;
+ 							if (pLocalMessages != NULL) {
+ 								while (pMessageLoop != NULL) {
+-									wprintw(pMainWindow, pMessageLoop->szMessage);
++									wprintw(pMainWindow, "%s", pMessageLoop->szMessage);
+ 									//wrefresh(pMainWindow);
+ 									struct MESSAGE *pFree = pMessageLoop;
+ 									pMessageLoop = pMessageLoop->pNext;
