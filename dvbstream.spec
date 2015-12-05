@@ -1,7 +1,7 @@
 Summary:	MPEG-2 streaming over LAN
 Name:		dvbstream
 Version:	0.8.2
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Networking
 Source0:	http://www.orcas.net/dvbstream/%{name}-%{version}.tar.bz2
